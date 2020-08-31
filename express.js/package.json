@@ -1,0 +1,30 @@
+{
+  "name": "express.js",
+  "version": "1.0.0",
+  "description": "this is a repository for me to write down notes for a review and my full understanding of Express.js from Brad Traversy's Express JS Crash Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claire-labry/express.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claire-labry/express.js/issues"
+  },
+  "homepage": "https://github.com/claire-labry/express.js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "moment": "^2.27.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
