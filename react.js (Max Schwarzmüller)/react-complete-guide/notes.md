@@ -22,7 +22,7 @@
     - When creating components, you have the choice to explore 2 different ways: 
         1. *functional components* (also referred to 'presentational', or 'stateless' components) => const cmp = () =>{ return <div>some JSX </div>} 
         2. *class-based components* (also referred to 'containers', 'stateful' components) => class Cmp extends Component = () =>{ render(){ return <div>some JSX </div>} }
-        note: you should use functional components as often as possible. 
+    - note: you should use functional components as often as possible. 
 
 ## working with components & re-using them
 - components are easily re-used throughout an application
@@ -33,8 +33,8 @@
 
 ## working with props
 - props makes components configurable, flexible, dynamic
-- it would be nice to add attributes to components, thus where props come in to help this i.e. in your App.js you have the <Person> component and by adding attributes it would look something like this: <Person name="Claire" age="26" /> but if in the Person functional component, the arugment props must be called in the person function. 
-- IMPT NOTE: When using class-based components, it's {this.props} instead of {props.name} as shown in functional components.
+- it would be nice to add attributes to components, thus where props come in to help this i.e. in your App.js you have the `<Person>` component and by adding attributes it would look something like this: `<Person name="Claire" age="26" />` but if in the Person functional component, the arugment props must be called in the person function. 
+- IMPT NOTE: When using class-based components, it's `{this.props}` instead of `{props.name}` as shown in functional components.
 
 ## understanding the 'children' prop
 - children prop allows us to output whatever we pass between the opening and closing tag of our custom component. in this case, i'm passing 'Hobbies: Gardening' in the Person component in the App.js file but it will not render unless you wrap your retun with parenthesis, wrap it up with a parent element, and create a new tag with {props.children}
@@ -43,7 +43,7 @@
 - props is simply an object giving us access to all the attributes passed into components whether it be inside the custom component tag or in between custom component beginning and ending tags 
 
 ## understanding & using state (re-watch)
-- aside from props, sometimes you don't want to get some information from the ouside, but you want to have it inside a component (i.e. <Person name="Claire" age="26" /> but instead having this info in your component rather than App.js)
+- aside from props, sometimes you don't want to get some information from the ouside, but you want to have it inside a component (i.e. `<Person name="Claire" age="26" />` but instead having this info in your component rather than App.js)
 
 ## props & state
 - QUOTED FROM MAX SCHWARZMÜLLER: 
@@ -56,7 +56,7 @@
             <div>
             <Post title='My first Post />
             </div>
-        )};```
+        )};`
     - here `title` is the custom property (prop) set up on the custom `Post` component. We basically replicate the default HTML attribute behavior we already know (e.g. `<input type='text'>` informs the browser about how to handle that input.)
     - EXAMPLE Post Component (related to above):
     - ```const post = (props) => {
@@ -64,7 +64,7 @@
             <div>
             <h1>{props.title}</h1>
             </div>
-        )};```
+        )};`
     - The `Post` component receives the `props` argument. You can ofc name this argument whatever you want, it's your function definition, React doesn't care. (it's highly suggested to use `props` to make your code easier to understand & readable for others.) But React will pass one arguement to your component function => An object which contains all properties you set up on `<Post .../>`
     - `{props.title}` then dynamically outputs the `title` property of the `props` object - which is available since we set the `title` property inside `AllPosts` component (see above)
     - STATE:
@@ -76,11 +76,13 @@
         };
         render(){return (
             <div{ths.state.counter}</div>
-        )}}```
+        )}}`
     - here, the `NewPost` component contains `state`. Only class-based components can define and use `state`. You can of course pass the `state` down to functional components, but these then cannot directly edit it. 
     - `state` simply is a property of the component class, you have to call it `state` though - the name is NOT optional. You can access it via `this.state` in your JSX code (which you return in the required `render()` method).
     - Whenever `state` changes, the component will re-render and reflect the new state. The difference to `props` is, that this happens within one and the same component - you don't receive new data(`props`) from outside!
 
+
+STOPPED AT `Handling Events with Methods`
 
 
 ## questions to explore & answers to them
