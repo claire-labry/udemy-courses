@@ -50,39 +50,43 @@
     - `props` and `state` are CORE concepts of React. Actually, only changes in `props` &/or `state` trigger React to re-render your components & potentially update the DOM in the browser.
     - PROPS: 
     - `props` allow you to pass data from a parent (wrapping) component to a child (embeded) component. 
-    - EXAMPLE AllPosts Component: 
+    - EXAMPLE `AllPosts` Component: 
     - ```const posts = () => {
         return (
             <div>
             <Post title='My first Post />
             </div>
-        )};`
+        )};
     - here `title` is the custom property (prop) set up on the custom `Post` component. We basically replicate the default HTML attribute behavior we already know (e.g. `<input type='text'>` informs the browser about how to handle that input.)
-    - EXAMPLE Post Component (related to above):
+    - EXAMPLE `Post` Component:
     - ```const post = (props) => {
         return (
             <div>
             <h1>{props.title}</h1>
             </div>
-        )};`
+        )};
     - The `Post` component receives the `props` argument. You can ofc name this argument whatever you want, it's your function definition, React doesn't care. (it's highly suggested to use `props` to make your code easier to understand & readable for others.) But React will pass one arguement to your component function => An object which contains all properties you set up on `<Post .../>`
     - `{props.title}` then dynamically outputs the `title` property of the `props` object - which is available since we set the `title` property inside `AllPosts` component (see above)
     - STATE:
     - Whilst props allow you to pass data down the component tree, (and hence trugger an UI update), state is used to change the component, (state from within). Changes to state also trigger an UI update. 
-    - EXAMPLE NewPost Component: 
+    - EXAMPLE `NewPost` Component: 
     - ```class NewPost extends Component {
         state ={
             counter: 1
         };
         render(){return (
             <div{ths.state.counter}</div>
-        )}}`
+        )}}
     - here, the `NewPost` component contains `state`. Only class-based components can define and use `state`. You can of course pass the `state` down to functional components, but these then cannot directly edit it. 
     - `state` simply is a property of the component class, you have to call it `state` though - the name is NOT optional. You can access it via `this.state` in your JSX code (which you return in the required `render()` method).
     - Whenever `state` changes, the component will re-render and reflect the new state. The difference to `props` is, that this happens within one and the same component - you don't receive new data(`props`) from outside!
 
 
-STOPPED AT `Handling Events with Methods`
+## handling events with methods
+- 
+
+## to which events can you listen?
+- 
 
 
 ## questions to explore & answers to them
