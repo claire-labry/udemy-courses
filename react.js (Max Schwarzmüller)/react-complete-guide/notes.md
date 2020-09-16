@@ -83,11 +83,31 @@
 
 
 ## handling events with methods
-- 
+- onClick functions must be in camelCase
+- Typical practice of naming methods with an onClick function in React should have a 'Handler' at the end to show that it's an event handler & is being called in the application somewhere.
+- when calling an event handler in your app, don't put () because that would get executed immediately once react renders it to the dom 
 
 ## to which events can you listen?
-- 
+- refer to the list of supported events here: [https://reactjs.org/docs/events.html#supported-events]
 
+## manipulating the state
+
+## function components naming
+- refer to the notes/resource file in the udemy course
+
+## using the useState() Hook for state manipulation
+
+## stateless vs. stateful components
+
+## passing method references between components
+
+## adding two way binding
+
+## adding styling with stylesheets
+
+## assignment #1 time to practice - the base syntax 
+
+(51 out of 490 complete [439 left])
 
 ## questions to explore & answers to them
 - the difference between functional component and class component? (ANSWERED IN COMPONENTS & JSX CHEAT SHEET)
