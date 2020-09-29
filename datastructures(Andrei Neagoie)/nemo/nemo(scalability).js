@@ -1,14 +1,15 @@
 const nemo = ['nemo']
+// const large = new Array(100).fill('nemo')
 
 function findNemo (array) {
-  const t0 = performance.now()
+  // const t0 = performance.now()
   for (let i = 0; i < array.length; i++) {
     if (array[i] === 'nemo') {
       console.log('Found Nemo!')
     }
   }
-  const t1 = performance.now()
-  console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds')
+  // const t1 = performance.now()
+  // console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds')
 }
 
 findNemo(nemo)
