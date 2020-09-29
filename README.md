@@ -15,3 +15,5 @@ feel free to take a look if you'd like to!
 
 # upcoming 
 - JavaScript: The Advanced Concepts by Andrei Neagoie
+
+#### using StandardJs - JavaScript Standard Style
