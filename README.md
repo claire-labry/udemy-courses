@@ -15,5 +15,7 @@ feel free to take a look if you'd like to!
 
 # upcoming 
 - JavaScript: The Advanced Concepts by Andrei Neagoie
+- Docker for the Absolute Beginner by Mumshad Mannambeth
+- 2020 Complete Python Bootcamp by Jose Portilla
 
 #### using StandardJs - JavaScript Standard Style
