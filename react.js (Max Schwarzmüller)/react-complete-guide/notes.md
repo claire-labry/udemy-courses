@@ -96,7 +96,7 @@
 - refer to the notes/resource file in the udemy course
 
 ## using the useState() Hook for state manipulation
-
+- 
 ## stateless vs. stateful components
 
 ## passing method references between components
